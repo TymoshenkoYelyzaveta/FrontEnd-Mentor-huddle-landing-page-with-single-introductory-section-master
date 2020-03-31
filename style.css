@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;700&display=swap');
+
+:root{
+    --violet: hsl(257, 40%, 49%);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    background: var(--violet);
+    background-image: url('./images/bg-desktop.svg');
+    background-repeat: repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 1.5rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-bottom: 5rem;
+}
+
+.logo{
+    width: 200px;
+    height: 100px;
+    margin-top: 0;
+    margin-bottom: 2rem;
+}
+
+.flex{
+    display: flex;
+}
+
+.flex .mockup-div{
+    width: 50%; 
+    padding: 1rem 2rem 3rem 2rem;
+}
+
+.flex .mockup-div .mockup{
+    width: 100%;
+}
+
+.description{
+    padding: 2.5rem;
+    width: 50%;
+
+}
+
+h1{
+    font-weight: 700;
+}
+
+p{
+    font-weight: 400;
+    font-size: 16px;
+}
+
+button{
+    background: #fff;
+    color: var(--violet);
+    outline: none;
+    border: none;
+    border-radius: 30px;
+    padding: 1em 4.5em;
+    box-shadow: 10px 2px 24px -5px rgba(89,75,125,1);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+button:hover{
+    transform: scale(1.2);
+}
+
+.social{
+    display: flex;
+    flex-direction: row;
+    float: right;
+    right: 0;
+}
+
+
+
+.social .circle{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    border: 1px solid #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-decoration: none;
+}
+
+.social .circle:hover{
+    border: 1px solid #fff;
+    color: var(--violet);
+    background: #fff;
+    transform: scale(1.2);
+}
+
+@media (max-width:700px){
+
+    .container{
+        background-image: url('./images/bg-mobile.svg');
+        background-repeat: repeat;
+        background-position: center;
+        background-size: cover;
+        padding-top: 1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-bottom: 4rem;
+    }
+
+    .logo{
+        width: 100px;
+        height: 30px;
+        margin-top: 0;
+    }
+
+    .flex{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .description{
+        width: 100%;
+        padding: 1rem;
+        padding-bottom: 3rem;
+    }
+
+    .flex .mockup-div {
+        width: 100%;
+        padding: 1.5rem;
+    }
+    .social{
+        float: none;
+        align-items: center;
+        justify-content: center;
+    }
+    ul{
+        margin: 0;
+        padding: 0;
+    }
+}
